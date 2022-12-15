@@ -8,6 +8,8 @@ fetch('https://dog.ceo/api/breeds/image/random')
     .then(res=>res.json())
     .then(json=>console.log(json))
 
+
+
 fetch('https://dog.ceo/api/breed/mastiff/images')
             .then(res=>res.json())
             .then(json=>console.log(json))
@@ -46,7 +48,7 @@ contenedorUsuario.appendChild(usuarioAbuscar);
 let botonBusqueda= document.createElement('button');
 botonBusqueda.setAttribute('id','boton')
 contenedorUsuario.appendChild(botonBusqueda);
-Document.getElementById('boton').addEventListener('submit', (event) => console.log(event.target.value));
+document.getElementById('boton').addEventListener('submit', (event) => console.log(event.target.value));
 
 
 /*Estos son los tres valores que se supone que deberiamos imprimir
